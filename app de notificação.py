@@ -5,3 +5,5 @@ notification.notify(
     message="Ola, Pare um pouco",
     app_name="Python coding"
 )
+
+print("Troll")
