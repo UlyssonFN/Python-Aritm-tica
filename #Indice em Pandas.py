@@ -23,8 +23,9 @@ print(df2)
 df3 = df_filtro.iloc[0:4, :]
 #Reseta o indice para começar com 0, o comando drop=True exclue o indice antigo, pois senão fizer isso ele gera uma coluna com o indice antigo
 print(df3.reset_index(drop=True))
-print(df_loja.reset_index(drop=True))
+print(df_loja.reset_index(inplace=True, drop=True))
 
+#muda a coluna indice de acordo com a coluna determinada dentro do set_index
 df4 = df_filtro.set_index('Sku')
 print(df4)
 
