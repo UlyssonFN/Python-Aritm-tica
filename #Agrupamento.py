@@ -23,3 +23,5 @@ df.groupby(['Sku', 'V_Compra'])['V_Venda'].sum()
 df_merge = pd.merge(Sku, V_Compra, how'inner', on='id')
 print(df_merge)
 
+#Revisar função concat e append
+
